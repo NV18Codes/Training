@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Development Day 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .example {
+            margin: 20px 0;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #d14;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        marquee {
+            background: #ffeb3b;
+            padding: 10px;
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Frontend Development Day 3</h1>
+    </header>
+
+    <nav>
+        <a href="#forms">Forms</a>
+        <a href="#semantic">Semantic HTML</a>
+        <a href="#css">CSS Positioning</a>
+        <a href="#multimedia">Audio & Video</a>
+        <a href="#homework">Homework</a>
+    </nav>
+
+    <marquee>Welcome to Day 3! Let's learn and code together!</marquee>
+
+    <main>
+        <section id="forms">
+            <h2>HTML: Forms and Input Types</h2>
+            <p>Forms allow users to input and submit data. Here are some examples:</p>
+
+            <h3>Basic Form</h3>
+            <div class="example">
+                <code>
+          &lt;form action="/submit" method="POST"&gt;<br>
+          &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+          &nbsp;&nbsp;&lt;input type="text" id="name" name="name" required&gt;<br><br>
+          &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+          &nbsp;&nbsp;&lt;input type="email" id="email" name="email" required&gt;<br><br>
+          &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+          &lt;/form&gt;
+        </code>
+            </div>
+
+            <h3>Input Types</h3>
+            <p>Here are some common input types:</p>
+            <ul>
+                <li><strong>Text:</strong> <code>&lt;input type="text"&gt;</code></li>
+                <li><strong>Email:</strong> <code>&lt;input type="email"&gt;</code></li>
+                <li><strong>Password:</strong> <code>&lt;input type="password"&gt;</code></li>
+                <li><strong>Checkbox:</strong> <code>&lt;input type="checkbox"&gt;</code></li>
+                <li><strong>Radio:</strong> <code>&lt;input type="radio"&gt;</code></li>
+                <li><strong>Button:</strong> <code>&lt;input type="button"&gt;</code></li>
+            </ul>
+
+            <h3>Dropdown and Textarea</h3>
+            <div class="example">
+                <code>
+          &lt;label for="country"&gt;Country:&lt;/label&gt;<br>
+          &lt;select id="country" name="country"&gt;<br>
+          &nbsp;&nbsp;&lt;option value="india"&gt;India&lt;/option&gt;<br>
+          &nbsp;&nbsp;&lt;option value="usa"&gt;USA&lt;/option&gt;<br>
+          &nbsp;&nbsp;&lt;option value="uk"&gt;UK&lt;/option&gt;<br>
+          &lt;/select&gt;<br><br>
+
+          &lt;label for="message"&gt;Message:&lt;/label&gt;<br>
+          &lt;textarea id="message" name="message" rows="4" cols="50"&gt;&lt;/textarea&gt;
+        </code>
+            </div>
+        </section>
+
+        <section id="semantic">
+            <h2>HTML: Semantic Elements</h2>
+            <p>Semantic elements provide better structure and accessibility. Examples include:</p>
+            <ul>
+                <li><code>&lt;header&gt;</code>: Defines a page or section header.</li>
+                <li><code>&lt;footer&gt;</code>: Defines a page or section footer.</li>
+                <li><code>&lt;main&gt;</code>: Main content area.</li>
+                <li><code>&lt;article&gt;</code>: Self-contained content like a blog post.</li>
+                <li><code>&lt;section&gt;</code>: Thematic grouping of content.</li>
+                <li><code>&lt;aside&gt;</code>: Sidebar or related content.</li>
+                <li><code>&lt;nav&gt;</code>: Navigation links.</li>
+            </ul>
+            <p>Example of semantic structure:</p>
+            <div class="example">
+                <code>
+          &lt;header&gt;<br>
+          &nbsp;&nbsp;&lt;h1&gt;Welcome to My Website&lt;/h1&gt;<br>
+          &lt;/header&gt;<br><br>
+          &lt;main&gt;<br>
+          &nbsp;&nbsp;&lt;article&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Article Title&lt;/h2&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is an article.&lt;/p&gt;<br>
+          &nbsp;&nbsp;&lt;/article&gt;<br>
+          &lt;/main&gt;<br><br>
+          &lt;footer&gt;<br>
+          &nbsp;&nbsp;&lt;p&gt;© 2025 My Website&lt;/p&gt;<br>
+          &lt;/footer&gt;
+        </code>
+            </div>
+        </section>
+
+        <section id="css">
+            <h2>CSS: Advanced Positioning</h2>
+            <p>CSS positioning allows precise placement of elements:</p>
+            <ul>
+                <li><strong>Static:</strong> Default positioning.</li>
+                <li><strong>Relative:</strong> Positioned relative to its normal position.</li>
+                <li><strong>Absolute:</strong> Positioned relative to its nearest positioned ancestor.</li>
+                <li><strong>Fixed:</strong> Positioned relative to the viewport.</li>
+            </ul>
+            <p>Example CSS:</p>
+            <div class="example">
+                <code>
+          .box {<br>
+          &nbsp;&nbsp;width: 100px;<br>
+          &nbsp;&nbsp;height: 100px;<br>
+          &nbsp;&nbsp;background: coral;<br>
+          }<br><br>
+          .relative {<br>
+          &nbsp;&nbsp;position: relative;<br>
+          &nbsp;&nbsp;top: 20px;<br>
+          &nbsp;&nbsp;left: 20px;<br>
+          }<br><br>
+          .absolute {<br>
+          &nbsp;&nbsp;position: absolute;<br>
+          &nbsp;&nbsp;top: 50px;<br>
+          &nbsp;&nbsp;left: 50px;<br>
+          }<br><br>
+          .fixed {<br>
+          &nbsp;&nbsp;position: fixed;<br>
+          &nbsp;&nbsp;top: 10px;<br>
+          &nbsp;&nbsp;right: 10px;<br>
+          }
+        </code>
+            </div>
+        </section>
+
+        <section id="multimedia">
+            <h2>HTML: Audio and Video</h2>
+            <p>HTML allows embedding multimedia content like audio and video. Examples:</p>
+
+            <h3>Audio Element</h3>
+            <div class="example">
+                <code>
+                &lt;audio controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="audio-file.mp3" type="audio/mpeg"&gt;<br>
+                &nbsp;&nbsp;Your browser does not support the audio element.<br>
+                &lt;/audio&gt;
+              </code>
+            </div>
+
+            <h3>Video Element</h3>
+            <div class="example">
+                <code>
+                &lt;video controls width="320" height="240"&gt;<br>
+                &nbsp;&nbsp;&lt;source src="video-file.mp4" type="video/mp4"&gt;<br>
+                &nbsp;&nbsp;Your browser does not support the video element.<br>
+                &lt;/video&gt;
+              </code>
+            </div>
+        </section>
+
+        <section id="layout-structuring">
+            <h2>HTML: Using <code>&lt;div&gt;</code> and <code>&lt;section&gt;</code></h2>
+            <p>The <code>&lt;div&gt;</code> element is a container for grouping content, while
+                <code>&lt;section&gt;</code> is used for grouping semantically related content.
+            </p>
+
+            <h3>Example Layout</h3>
+            <div class="example">
+                <code>
+                &lt;div class="container"&gt;<br>
+                &nbsp;&nbsp;&lt;header&gt;Header Content&lt;/header&gt;<br>
+                &nbsp;&nbsp;&lt;div class="main-content"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;Section 1 Content&lt;/section&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;Section 2 Content&lt;/section&gt;<br>
+                &nbsp;&nbsp;&lt;/div&gt;<br>
+                &nbsp;&nbsp;&lt;footer&gt;Footer Content&lt;/footer&gt;<br>
+                &lt;/div&gt;
+              </code>
+            </div>
+        </section>
+
+        <section id="homework">
+            <h2>Homework</h2>
+            <p>Apply what you've learned from Days 1, 2, and 3 by creating a fully structured webpage:</p>
+            <ul>
+                <li>
+                    <strong>HTML:</strong>
+                    <ul>
+                        <li>Use semantic elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+                            <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>.
+                        </li>
+                        <li>Create a form with various input types: text, email, password, number, checkbox, and radio.
+                        </li>
+                        <li>Include a dropdown menu and a textarea for user input.</li>
+                        <li>Add a navigation bar with links that point to different sections of the page.</li>
+                        <li>Use the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements to embed
+                            multimedia content.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>CSS:</strong>
+                    <ul>
+                        <li>Style the page with a consistent color scheme and font family.</li>
+                        <li>Use CSS to create a layout with a header, sidebar, and main content area.</li>
+                        <li>Experiment with different positioning techniques: static, relative, absolute, and fixed.
+                        </li>
+                        <li>Add a marquee to display important announcements or updates.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Bonus Task:</strong>
+                    <ul>
+                        <li>Design a simple card layout for displaying information (e.g., user profiles, products, or
+                            articles).</li>
+                        <li>Include hover effects on buttons and navigation links for better interactivity.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+
+</html>

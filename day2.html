@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Development Day 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #2196F3;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .example {
+            margin: 20px 0;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        code {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #d14;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #2196F3;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Frontend Development Day 2</h1>
+        <p>Working with HTML Elements and Styling with CSS</p>
+    </header>
+    <main>
+        <section>
+            <h2>HTML: Lists, Tables, and Images</h2>
+            <p>Today, we will learn how to create lists, tables, and insert images in HTML.</p>
+
+            <h3>Lists</h3>
+            <p>There are two main types of lists in HTML:</p>
+            <ul>
+                <li><strong>Ordered List</strong>: Numbered items.</li>
+                <li><strong>Unordered List</strong>: Bulleted items.</li>
+            </ul>
+            <div class="example">
+                <code>
+          &lt;h3&gt;Ordered List&lt;/h3&gt;<br>
+          &lt;ol&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+          &lt;/ol&gt;<br>
+          <br>
+          &lt;h3&gt;Unordered List&lt;/h3&gt;<br>
+          &lt;ul&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Item A&lt;/li&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Item B&lt;/li&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Item C&lt;/li&gt;<br>
+          &lt;/ul&gt;
+        </code>
+            </div>
+
+            <h3>Tables</h3>
+            <p>Tables are used to display data in rows and columns.</p>
+            <div class="example">
+                <code>
+          &lt;table&gt;<br>
+          &nbsp;&nbsp;&lt;tr&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br>
+          &nbsp;&nbsp;&lt;/tr&gt;<br>
+          &nbsp;&nbsp;&lt;tr&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;25&lt;/td&gt;<br>
+          &nbsp;&nbsp;&lt;/tr&gt;<br>
+          &nbsp;&nbsp;&lt;tr&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane&lt;/td&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;30&lt;/td&gt;<br>
+          &nbsp;&nbsp;&lt;/tr&gt;<br>
+          &lt;/table&gt;
+        </code>
+            </div>
+
+            <h3>Images</h3>
+            <p>Images can be added using the <code>&lt;img&gt;</code> tag.</p>
+            <div class="example">
+                <code>
+          &lt;img src="https://via.placeholder.com/150" alt="Placeholder Image"&gt;
+        </code>
+            </div>
+        </section>
+
+        <section>
+            <h2>HTML: Introducing the <code>&lt;a&gt;</code> Tag and <code>href</code> Attribute</h2>
+            <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks, which allow users to navigate to other pages
+                or resources. The <code>href</code> attribute specifies the URL of the page the link goes to.</p>
+
+            <h3>Example: Linking to an External Website</h3>
+            <div class="example">
+                <code>
+          &lt;a href="https://www.example.com" target="_blank"&gt;Visit Example Website&lt;/a&gt;
+        </code>
+            </div>
+
+            <h3>Example: Linking to an Internal Page</h3>
+            <div class="example">
+                <code>
+          &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+        </code>
+            </div>
+
+            <p>You can also use <code>href="#section-id"</code> to link to a specific section of the same page.</p>
+        </section>
+
+        <section>
+            <h2>CSS: Box Model and Styling Elements</h2>
+            <p>CSS Box Model includes margins, borders, padding, and the content area. Here's how it looks:</p>
+            <img src="https://imgs.search.brave.com/fkKPyhQJQzzqZfWQ6jx16flCvKwzIZHuoaydDz2GBJo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb2Rl/c3dlZXRseS5jb20v/X2FzdHJvL2Nzcy1i/b3gtbW9kZWwtYW5h/dG9teS1jb2Rlc3dl/ZXRseS5DRUYzd0lX/SF9aMjBHZXdlLndl/YnA"
+                alt="CSS Box Model Illustration" class="example">
+
+            <p>Here are some common CSS properties to style elements:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>color</td>
+                        <td>Sets the text color.</td>
+                        <td><code>color: red;</code></td>
+                    </tr>
+                    <tr>
+                        <td>background-color</td>
+                        <td>Sets the background color.</td>
+                        <td><code>background-color: yellow;</code></td>
+                    </tr>
+                    <tr>
+                        <td>margin</td>
+                        <td>Creates space around an element.</td>
+                        <td><code>margin: 20px;</code></td>
+                    </tr>
+                    <tr>
+                        <td>padding</td>
+                        <td>Creates space inside an element.</td>
+                        <td><code>padding: 10px;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Simple CSS Example</h3>
+            <p>Here's a simple CSS snippet to style a webpage:</p>
+            <div class="example">
+                <code>
+          body {<br>
+          &nbsp;&nbsp;background-color: lightgray;<br>
+          &nbsp;&nbsp;color: black;<br>
+          &nbsp;&nbsp;font-family: Verdana, sans-serif;<br>
+          }<br>
+          h1 {<br>
+          &nbsp;&nbsp;color: darkblue;<br>
+          &nbsp;&nbsp;text-align: center;<br>
+          }<br>
+          p {<br>
+          &nbsp;&nbsp;padding: 10px;<br>
+          &nbsp;&nbsp;border: 1px solid #ccc;<br>
+          }
+        </code>
+            </div>
+        </section>
+
+        <section>
+            <h2>Homework</h2>
+            <p>1. Create a webpage with the following:</p>
+            <ul>
+                <li>A heading using <code>&lt;h1&gt;</code> and subheadings using <code>&lt;h2&gt;</code> and
+                    <code>&lt;h3&gt;</code>.
+                </li>
+                <li>An ordered list and an unordered list.</li>
+                <li>A table with at least three rows and two columns.</li>
+                <li>An image with proper alt text.</li>
+                <li>A link to an external website and an internal page.</li>
+            </ul>
+
+            <p>2. Use CSS to:</p>
+            <ul>
+                <li>Style the lists and table (e.g., change text color, add borders).</li>
+                <li>Apply margins and padding to elements.</li>
+                <li>Experiment with background colors and fonts.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>My First Website!!</footer>
+</body>
+
+</html>
