@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Development Day 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .example {
+            margin: 20px 0;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        code {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #d14;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Frontend Development Day 4</h1>
+        <p>Tailwind CSS, GitHub Configurations, and Introduction to JavaScript</p>
+    </header>
+
+    <nav>
+        <ul class="flex justify-center bg-gray-800 text-white py-4">
+            <li class="mx-4"><a href="#tailwind" class="hover:underline">Tailwind CSS</a></li>
+            <li class="mx-4"><a href="#github" class="hover:underline">GitHub Basics</a></li>
+            <li class="mx-4"><a href="#clone" class="hover:underline">Website Cloning</a></li>
+            <li class="mx-4"><a href="#javascript" class="hover:underline">Introduction to JavaScript</a></li>
+            <li class="mx-4"><a href="#homework" class="hover:underline">Homework</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Tailwind CSS Section -->
+        <section id="tailwind">
+            <h2>Tailwind CSS</h2>
+            <p>Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.</p>
+
+            <h3>Setting up Tailwind CSS</h3>
+            <p>You can use Tailwind CSS via CDN or npm. Example:</p>
+            <div class="example">
+                <code>
+                    &lt;link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"&gt;
+                </code>
+            </div>
+
+            <h3>Basic Example</h3>
+            <p>Here’s an example of a responsive card layout using Tailwind CSS:</p>
+            <div class="example">
+                <code>
+                    &lt;div class="grid grid-cols-1 md:grid-cols-3 gap-4"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="p-4 bg-gray-200 rounded shadow"&gt;Card 1&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="p-4 bg-gray-200 rounded shadow"&gt;Card 2&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="p-4 bg-gray-200 rounded shadow"&gt;Card 3&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        </section>
+
+        <!-- GitHub Section -->
+        <section id="github">
+            <h2>GitHub Basics</h2>
+            <p>GitHub is a platform for version control and collaboration. Steps to use GitHub:</p>
+
+            <h3>Git Commands</h3>
+            <ul>
+                <li><code>git init</code>: Initialize a Git repository.</li>
+                <li><code>git add .</code>: Stage all changes.</li>
+                <li><code>git commit -m "Message"</code>: Commit changes with a message.</li>
+                <li><code>git push</code>: Push changes to a remote repository.</li>
+            </ul>
+        </section>
+
+        <!-- Website Cloning Section -->
+        <section id="clone">
+            <h2>Website Cloning</h2>
+            <p>Cloning a website involves recreating its layout and functionality. Steps:</p>
+            <ol>
+                <li>Analyze the website structure and layout.</li>
+                <li>Use HTML for structure and Tailwind CSS for styling.</li>
+                <li>Ensure responsiveness and accessibility.</li>
+            </ol>
+
+            <h3>Example Layout</h3>
+            <div class="example">
+                <code>
+                    &lt;header class="bg-blue-500 text-white p-4"&gt;Header&lt;/header&gt;<br>
+                    &lt;main class="p-4"&gt;Main Content&lt;/main&gt;<br>
+                    &lt;footer class="bg-gray-800 text-white p-4"&gt;Footer&lt;/footer&gt;
+                </code>
+            </div>
+        </section>
+
+        <!-- Introduction to JavaScript Section -->
+        <section id="javascript">
+            <h2>Introduction to JavaScript</h2>
+            <p>JavaScript is a programming language used to add interactivity to websites.</p>
+
+            <h3>Basic Syntax</h3>
+            <div class="example">
+                <code>
+                    &lt;script&gt;<br>
+                    &nbsp;&nbsp;function greet() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;alert('Hello, World!');<br>
+                    &nbsp;&nbsp;}<br>
+                    &lt;/script&gt;<br>
+                    &lt;button onclick="greet()"&gt;Click Me&lt;/button&gt;
+                </code>
+            </div>
+
+            <h3>DOM Manipulation</h3>
+            <p>Use JavaScript to interact with the Document Object Model (DOM).</p>
+            <div class="example">
+                <code>
+                    &lt;div id="content"&gt;Initial Content&lt;/div&gt;<br>
+                    &lt;button onclick="changeContent()"&gt;Change Content&lt;/button&gt;<br>
+                    &lt;script&gt;<br>
+                    &nbsp;&nbsp;function changeContent() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('content').innerText = 'Updated Content!';<br>
+                    &nbsp;&nbsp;}<br>
+                    &lt;/script&gt;
+                </code>
+            </div>
+        </section>
+
+        <!-- Homework Section -->
+        <section id="homework">
+            <h2>Homework</h2>
+            <ol>
+                <li><strong>Tailwind CSS:</strong> Create a responsive navigation bar with hover effects.</li>
+                <li><strong>GitHub:</strong> Initialize a repository, commit your changes, and push them to GitHub.</li>
+                <li><strong>Website Cloning:</strong> Clone a simple landing page using Tailwind CSS.</li>
+                <li><strong>JavaScript:</strong>
+                    <ul>
+                        <li>Create a button that displays an alert on click.</li>
+                        <li>Use JavaScript to dynamically change the content of an HTML element.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Frontend Development Bootcamp</p>
+    </footer>
+</body>
+
+</html>
