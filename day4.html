@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Development Day 4</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Add Font Awesome CDN for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -65,6 +67,7 @@
             <li class="mx-4"><a href="#github" class="hover:underline">GitHub Basics</a></li>
             <li class="mx-4"><a href="#clone" class="hover:underline">Website Cloning</a></li>
             <li class="mx-4"><a href="#javascript" class="hover:underline">Introduction to JavaScript</a></li>
+            <li class="mx-4"><a href="#font-awesome" class="hover:underline">Font Awesome</a></li>
             <li class="mx-4"><a href="#homework" class="hover:underline">Homework</a></li>
         </ul>
     </nav>
@@ -162,6 +165,36 @@
             </div>
         </section>
 
+        <!-- Font Awesome Section -->
+        <section id="font-awesome">
+            <h2>Font Awesome Icons</h2>
+            <p>Font Awesome provides scalable vector icons that can be customized with CSS.</p>
+
+            <h3>Adding Font Awesome</h3>
+            <p>Include Font Awesome in the <code>&lt;head&gt;</code> section to use its icons. Example:</p>
+            <div class="example">
+                <code>
+                    &lt;link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"&gt;
+                </code>
+            </div>
+
+            <h3>Using Font Awesome Icons</h3>
+            <p>Here’s an example of using Font Awesome icons:</p>
+            <div class="example">
+                <code>
+                    &lt;i class="fas fa-camera"&gt;&lt;/i&gt; Camera Icon<br>
+                    &lt;i class="fas fa-heart"&gt;&lt;/i&gt; Heart Icon<br>
+                    &lt;i class="fas fa-user"&gt;&lt;/i&gt; User Icon
+                </code>
+            </div>
+            <p>Icons in action:</p>
+            <div class="flex justify-center space-x-4">
+                <i class="fas fa-camera text-4xl"></i>
+                <i class="fas fa-heart text-4xl text-red-500"></i>
+                <i class="fas fa-user text-4xl"></i>
+            </div>
+        </section>
+
         <!-- Homework Section -->
         <section id="homework">
             <h2>Homework</h2>
@@ -175,6 +208,7 @@
                         <li>Use JavaScript to dynamically change the content of an HTML element.</li>
                     </ul>
                 </li>
+                <li><strong>Font Awesome:</strong> Add at least 3 icons to your webpage with different sizes and colors.</li>
             </ol>
         </section>
     </main>
